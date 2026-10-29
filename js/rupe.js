@@ -1,6 +1,3 @@
-/* RUPE - JavaScript del prototipo
-   Funciones sencillas para navegación, validaciones y demostración. */
-
 function elemento(id) {
   return document.getElementById(id);
 }
@@ -96,12 +93,12 @@ function confirmarRegistro() {
 }
 
 function actualizarDatosPublicos() {
-  var nombre = valor('mascotaNombre') || 'Max';
-  var raza = valor('mascotaRaza') || 'Labrador';
-  var color = valor('mascotaColor') || 'Dorado';
-  var tamano = valor('mascotaTamano') || 'Grande';
+  var nombre = valor('mascotaNombre') || 'Cassandra';
+  var raza = valor('mascotaRaza') || 'Schanuzer';
+  var color = valor('mascotaColor') || 'Gris';
+  var tamano = valor('mascotaTamano') || 'Mediano';
   var senas = valor('mascotaSenas') || 'Collar azul';
-  var zona = (valor('colonia') || 'Del Carmen') + ', ' + (valor('alcaldia') || 'Coyoacán');
+  var zona = (valor('colonia') || 'Zaragoza') + ', ' + (valor('alcaldia') || 'Coyoacán');
 
   var idsNombre = ['fichaMascotaNombre', 'seguimientoMascotaNombre', 'publicMascotaNombre'];
   for (var i = 0; i < idsNombre.length; i++) elemento(idsNombre[i]).textContent = nombre;
@@ -288,7 +285,6 @@ function guardarPermisos() {
   mensaje('mensajePermisos', 'Permisos guardados en la demostración.', 'ok');
 }
 
-// Si el archivo se abre con un enlace que contiene el folio, se muestra la vista pública.
 window.addEventListener('load', function() {
   if (window.location.hash.indexOf('reporte-RUPE-2026-0001') !== -1) {
     mostrar('p16');

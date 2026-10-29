@@ -88,7 +88,7 @@
   <div class="modulo-etiqueta">Registro de mascota extraviada</div>
   <h2>Datos del Tutor</h2>
   <p class="introduccion-formulario">
-    Ingresa los datos de la persona responsable del reporte. Esta información es privada y no se mostrará en la vista pública.
+    Ingresa los datos del responsable del reporte. Esta información es privada y no se mostrará en la vista pública.
   </p>
 
   <div class="pasos-registro" aria-label="Progreso del registro">
@@ -101,7 +101,7 @@
 
   <div class="panel-formulario">
     <label for="tutorNombre">Nombre completo</label>
-    <input id="tutorNombre" type="text" placeholder="Ej. Ana López Martínez">
+    <input id="tutorNombre" type="text" placeholder="Ej. Ignacio Peralta Muñoz">
 
     <div class="dos-columnas">
       <div>
@@ -146,14 +146,14 @@
     <div class="dos-columnas">
       <div>
         <label for="mascotaNombre">Nombre</label>
-        <input id="mascotaNombre" type="text" value="Max">
+        <input id="mascotaNombre" type="text" value="Cassandra">
       </div>
       <div>
         <label for="mascotaSexo">Sexo</label>
         <select id="mascotaSexo">
           <option value="">Selecciona una opción</option>
-          <option selected>Macho</option>
-          <option>Hembra</option>
+          <option>Macho</option>
+          <option selected>Hembra</option>
         </select>
       </div>
     </div>
@@ -161,14 +161,14 @@
     <div class="dos-columnas">
       <div>
         <label for="mascotaRaza">Raza</label>
-        <input id="mascotaRaza" type="text" value="Labrador">
+        <input id="mascotaRaza" type="text" value="Schanuzer">
       </div>
       <div>
         <label for="mascotaTamano">Tamaño</label>
         <select id="mascotaTamano">
           <option>Pequeño</option>
-          <option>Mediano</option>
-          <option selected>Grande</option>
+          <option selected>Mediano</option>
+          <option>Grande</option>
         </select>
       </div>
     </div>
@@ -176,11 +176,11 @@
     <div class="dos-columnas">
       <div>
         <label for="mascotaColor">Color principal</label>
-        <input id="mascotaColor" type="text" value="Dorado">
+        <input id="mascotaColor" type="text" value="Gris">
       </div>
       <div>
         <label for="mascotaEdad">Edad aproximada</label>
-        <input id="mascotaEdad" type="text" placeholder="Ej. 4 años">
+        <input id="mascotaEdad" type="text" placeholder="Ej. 9 años">
       </div>
     </div>
 
@@ -221,8 +221,7 @@
 
       <div>
         <label for="fotoMascota">Seleccionar fotografía</label>
-        <input id="fotoMascota" type="file" accept="image/*" onchange="mostrarVistaPreviaFoto(event)">
-        <p class="nota">Formatos comunes de imagen. En el prototipo la foto se mantiene solo durante la sesión del navegador.</p>
+        <input id="fotoMascota" type="file" accept="image/*" onchange="mostrarVistaPreviaFoto(event)">        
       </div>
     </div>
   </div>
@@ -273,7 +272,7 @@
       </div>
       <div>
         <label for="colonia">Colonia</label>
-        <input id="colonia" type="text" value="Del Carmen">
+        <input id="colonia" type="text" value="Zaragoza">
       </div>
     </div>
 
@@ -339,7 +338,7 @@
   </div>
 
   <div class="aviso-confirmacion">
-    Al confirmar, el prototipo generará un folio de seguimiento y permitirá crear la ficha con código QR.
+    Al confirmar, se generará un folio de seguimiento y se creará la ficha con código QR.
   </div>
 
   <div class="acciones">
@@ -350,7 +349,7 @@
 
 <section id="p07" class="pantalla">
   <div class="modulo-etiqueta">Registro de mascota extraviada</div>
-  <h2>P-07 Registro generado</h2>
+  <h2>Registro generado</h2>
 
   <div class="exito">
     Reporte registrado correctamente.
@@ -394,11 +393,11 @@
       </div>
 
       <div class="datos-ficha">
-        <h3 id="fichaMascotaNombre">Max</h3>
+        <h3 id="fichaMascotaNombre">Cassandra</h3>
 
-        <p><strong>Raza:</strong> <span id="fichaMascotaRaza">Labrador</span></p>
-        <p><strong>Color:</strong> <span id="fichaMascotaColor">Dorado</span></p>
-        <p><strong>Tamaño:</strong> <span id="fichaMascotaTamano">Grande</span></p>
+        <p><strong>Raza:</strong> <span id="fichaMascotaRaza">Schanuzer</span></p>
+        <p><strong>Color:</strong> <span id="fichaMascotaColor">Gris</span></p>
+        <p><strong>Tamaño:</strong> <span id="fichaMascotaTamano">Mediano</span></p>
         <p><strong>Señas particulares:</strong> <span id="fichaMascotaSenas">Collar azul</span></p>
         <p><strong>Fecha de extravío:</strong> <span id="fichaFechaExtravio">10/10/2026</span></p>
         <p><strong>Zona:</strong> <span id="fichaZonaExtravio">Coyoacán, Ciudad de México</span></p>
@@ -433,8 +432,7 @@
     <div class="consulta-fila">
       <input id="folio" type="text" placeholder="RUPE-2026-0001">
       <a onclick="consultarFolio(); return false;" href="#">Consultar</a>
-    </div>
-    <p class="nota">Para la demostración utiliza el folio RUPE-2026-0001.</p>
+    </div>    
     <p id="msgFolio" class="mensaje"></p>
   </div>
 
@@ -450,8 +448,8 @@
   <div class="cabecera-caso">
     <div>
       <p class="dato-superior">Folio RUPE-2026-0001</p>
-      <h3 id="seguimientoMascotaNombre">Max</h3>
-      <p id="seguimientoMascotaResumen">Labrador · Dorado · Coyoacán, Ciudad de México</p>
+      <h3 id="seguimientoMascotaNombre">Cassandra</h3>
+      <p id="seguimientoMascotaResumen">Schanuzer - Gris - Coyoacán, Ciudad de México</p>
     </div>
     <div class="estado-caso" id="estadoCaso">En búsqueda</div>
   </div>
@@ -514,7 +512,7 @@
 
       <div class="evento-info">
         <h3>Avistamiento en Coyoacán</h3>
-        <p>09:30 h · Colonia Del Carmen</p>
+        <p>09:30 h: Colonia Zaragoza</p>
         <p class="nota">El perro llevaba collar azul.</p>
       </div>
 
@@ -536,7 +534,7 @@
       <div class="fila-detalle"><span>Fecha</span><strong>11/10/2026</strong></div>
       <div class="fila-detalle"><span>Hora</span><strong>09:30</strong></div>
       <div class="fila-detalle"><span>Alcaldía</span><strong>Coyoacán</strong></div>
-      <div class="fila-detalle"><span>Colonia</span><strong>Del Carmen</strong></div>
+      <div class="fila-detalle"><span>Colonia</span><strong>Zaragoza</strong></div>
       <div class="fila-detalle"><span>Referencia</span><strong>Cerca de un parque</strong></div>
       <div class="fila-detalle fila-texto">
         <span>Observaciones</span>
@@ -571,7 +569,7 @@
 
       <div class="evento-info">
         <h3>Resguardo en Benito Juárez</h3>
-        <p>18:10 h · Colonia Portales</p>
+        <p>18:10 h: Colonia Portales</p>
         <p class="nota">Resguardo temporal reportado.</p>
       </div>
 
@@ -632,10 +630,7 @@
 
     <label for="observacionEstado">Observaciones</label>
     <textarea id="observacionEstado" placeholder="Describe brevemente el motivo de la actualización."></textarea>
-
-    <p class="nota">
-      En esta demostración el cambio se conserva solo mientras la página permanezca abierta.
-    </p>
+    
   </div>
 
   <p id="mensajeEstado" class="mensaje"></p>
@@ -657,7 +652,7 @@
     <div class="historial-item">
       <span class="historial-marca"></span>
       <div>
-        <strong>10/10/2026 · Reporte registrado</strong>
+        <strong>10/10/2026: Reporte registrado</strong>
         <p>Se generó el folio RUPE-2026-0001.</p>
       </div>
     </div>
@@ -665,7 +660,7 @@
     <div class="historial-item">
       <span class="historial-marca"></span>
       <div>
-        <strong>11/10/2026 · Avistamiento recibido</strong>
+        <strong>11/10/2026: Avistamiento recibido</strong>
         <p>Se registró un avistamiento en Coyoacán.</p>
       </div>
     </div>
@@ -673,7 +668,7 @@
     <div class="historial-item">
       <span class="historial-marca"></span>
       <div>
-        <strong>12/10/2026 · Resguardo recibido</strong>
+        <strong>12/10/2026: Resguardo recibido</strong>
         <p>Se registró un resguardo en Benito Juárez.</p>
       </div>
     </div>
@@ -693,29 +688,29 @@
 
   <div class="vista-publica">
     <div class="foto-publica">
-      <div class="foto-publica-demo">Fotografía de Max</div>
+      <div class="foto-publica-demo">Fotografía de Cassandra</div>
     </div>
 
     <div class="datos-publicos">
       <p class="folio-publico">Folio RUPE-2026-0001</p>
-      <h3 id="publicMascotaNombre">Max</h3>
+      <h3 id="publicMascotaNombre">Cassandra</h3>
 
       <div class="datos-publicos-grid">
         <div>
           <span>Raza</span>
-          <strong id="publicMascotaRaza">Labrador</strong>
+          <strong id="publicMascotaRaza">Schanuzer</strong>
         </div>
         <div>
           <span>Sexo</span>
-          <strong id="publicMascotaSexo">Macho</strong>
+          <strong id="publicMascotaSexo">Hembra</strong>
         </div>
         <div>
           <span>Color</span>
-          <strong id="publicMascotaColor">Dorado</strong>
+          <strong id="publicMascotaColor">Gris</strong>
         </div>
         <div>
           <span>Tamaño</span>
-          <strong id="publicMascotaTamano">Grande</strong>
+          <strong id="publicMascotaTamano">Mediano</strong>
         </div>
         <div>
           <span>Señas particulares</span>
